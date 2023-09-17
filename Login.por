@@ -17,7 +17,6 @@ programa {
     Cadastro()
   }
 
-
   funcao Cadastro(){
     escreva("Olá, seja bem vindo(a) ao banco de dados VNW!\n")
     u.aguarde(2000)

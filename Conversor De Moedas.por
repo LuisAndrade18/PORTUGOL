@@ -7,6 +7,7 @@ programa {
   real moeda2
   real valor2
   real convert
+  cadeia moeda
 
 
   funcao inicio() {
@@ -15,7 +16,6 @@ programa {
     Valor1()
     Moeda2()
     Converter()
-    escreva(convert)
   }
 
 
@@ -47,66 +47,69 @@ programa {
   }
 
   funcao Converter(){
-    escreva("O valor convertido fica em: ")
     escolha(moeda1){
       caso 1: escolha(moeda2){
         caso 1:convert = valor1 * 1
-        escreva("R$")
+        moeda="R$"
         pare
         caso 2:convert = valor1 * 0.2
-        escreva("US$")
+        moeda="US$"
         pare
         caso 3:convert = valor1 * 0.19
-        escreva("€")
+        moeda="€"
         pare
         caso 4:convert = valor1 * 170.24 
-        escreva("KZ")
+        moeda="KZ"
       }
 
+      pare
 
       caso 2: escolha(moeda2){
         caso 1:convert = valor1 * 4.86
-        escreva("R$")
+        moeda="R$"
         pare
         caso 2:convert = valor1 * 1
-        escreva("US$")
+        moeda="US$"
         pare
         caso 3:convert = valor1 * 0.93
-        escreva("€")
+        moeda="€"
         pare
         caso 4:convert = valor1 * 829 
-        escreva("KZ")
+        moeda="KZ"
       }
 
+      pare
 
       caso 3: escolha(moeda2){
         caso 1:convert = valor1 * 5.19
-        escreva("R$")
+        moeda="R$"
         pare
         caso 2:convert = valor1 * 1.06
-        escreva("US$")
+        moeda="US$"
         pare
         caso 3:convert = valor1 * 1
-        escreva("€")
+        moeda="€"
         pare
         caso 4:convert = valor1 *  884.70 
-        escreva("KZ")
+        moeda="KZ"
       }
 
+      pare
 
       caso 4: escolha(moeda2){
         caso 1:convert = valor1 * 0.0058
-        escreva("R$")
+        moeda="R$"
         pare
         caso 2:convert = valor1 * 0.0012
-        escreva("US$")
+        moeda="US$"
         pare
         caso 3:convert = valor1 * 0.0011
-        escreva("€")
+        moeda="€"
         pare
         caso 4:convert = valor1 * 1 
-        escreva("KZ")
+        moeda="KZ"
       }
     }
+    escreva("O valor convertido fica em: ", moeda, convert)
   }
 }
